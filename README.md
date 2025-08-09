@@ -21,8 +21,6 @@ It works with both **virtual devices** and real **MQTT-enabled IoT devices**.
 
 ![Dashboard Screenshot](Screenshot.png)
 
----
-
 ## 🛠️ Tech Stack
 
 **Frontend**
@@ -37,8 +35,6 @@ It works with both **virtual devices** and real **MQTT-enabled IoT devices**.
 - MongoDB with Mongoose
 - MQTT (HiveMQ public broker)
 - Socket.io server
-
----
 
 ## 📂 Folder Structure
 
@@ -62,23 +58,18 @@ cd smart-home-dashboard
 
 2️⃣ Install dependencies
 bash
-Copy
-Edit
+
 npm install
 3️⃣ Start MongoDB (Mac example)
 bash
-Copy
-Edit
 brew services start mongodb-community@7.0
 4️⃣ Start the server
+
 bash
-Copy
-Edit
 node server.js
 5️⃣ Open in browser
+
 arduino
-Copy
-Edit
 http://localhost:3000
 📡 MQTT Topics
 Device	Topic	Message
