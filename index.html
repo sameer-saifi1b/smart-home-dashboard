@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Load Socket.io first -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  </head>
+  <body>
+    <h1>Smart Home Dashboard</h1>
+
+    <div class="device">
+      <div>Living Room Light</div>
+      <div>
+        <span id="light-status" class="status">ON</span>
+        <button onclick="toggleLight()">Toggle</button>
+      </div>
+    </div>
+
+    <div class="device">
+      <div>Thermostat</div>
+      <div>
+        <span id="thermo-status" class="status">22°C</span>
+        <button onclick="decreaseTemp()">-</button>
+        <button onclick="increaseTemp()">+</button>
+      </div>
+    </div>
+    <div id="light-control">
+      <img id="light-bulb" src="bulb-off.png" alt="Bulb" width="80" />
+      <p>Status: <span id="light-status">OFF</span></p>
+      <button onclick="toggleLight()">Toggle Light</button>
+    </div>
+    <div id="temp-control">
+      <svg id="temp-gauge" width="120" height="120" viewBox="0 0 120 120">
+        <circle
+          cx="60"
+          cy="60"
+          r="50"
+          stroke="#ddd"
+          stroke-width="10"
+          fill="none"
+        />
+        <circle
+          id="temp-progress"
+          cx="60"
+          cy="60"
+          r="50"
+          stroke="orange"
+          stroke-width="10"
+          fill="none"
+          stroke-linecap="round"
+          transform="rotate(-90 60 60)"
+          stroke-dasharray="314"
+          stroke-dashoffset="314"
+        />
+      </svg>
+      <p id="thermo-status">22°C</p>
+      <input
+        type="number"
+        id="temperatureInput"
+        placeholder="Set Temperature"
+      />
+      <button id="setTemperature">Set Temperature</button>
+    </div>
+
+    <!-- Load JS last -->
+    <script src="script.js"></script>
+  </body>
+</html>

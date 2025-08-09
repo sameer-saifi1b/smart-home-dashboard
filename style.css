@@ -1,0 +1,57 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background-color: #f5f5f5;
+}
+h1 {
+  color: #333;
+}
+.device {
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+.status {
+  font-weight: bold;
+  color: green;
+}
+.status.off {
+  color: red;
+}
+button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#light-bulb {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.light-on {
+  filter: drop-shadow(0 0 15px yellow);
+  transform: scale(1.1);
+}
+.light-off {
+  filter: grayscale(100%);
+}
+#temp-control {
+  text-align: center;
+}
+#thermo-status {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: -10px;
+}
