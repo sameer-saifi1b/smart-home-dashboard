@@ -17,8 +17,6 @@ It works with both **virtual devices** and real **MQTT-enabled IoT devices**.
 
 ## 📸 UI Preview
 
-## 📸 UI Preview
-
 ![Dashboard Screenshot](Screenshot.png)
 
 ## 🛠️ Tech Stack
